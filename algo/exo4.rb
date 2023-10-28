@@ -5,10 +5,17 @@
 # Pro-tip: [3, 34, 302, 50, 31] est un meilleur test que celui ci-dessus.
 # 50 34 31 302 3
 
+# Bien tenté ! Mais il faut faire l'exercice manuellement.
+# def big(arr)
+#   arr.map(&:to_s).sort.reverse
+# end
+
 def big(arr)
-  arr.map(&:to_s).sort.reverse
+
 end
 
 print big([50, 2, 1, 9])
 puts ""
 print big([3, 34, 302, 50, 31])
+
+
