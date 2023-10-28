@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu de Navigation</title>
+  <style>
+    nav ul li a[href]:not(:where([href^="http"])) {
+        color: red;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <!-- Lien stackoverflow m'ayant permis de trouvert "ma" solution : https://stackoverflow.com/questions/5379752/css-style-external-links -->
+  <ul>
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="https://i.like.myself.com">Bento 🍱</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+</body>
+</html>

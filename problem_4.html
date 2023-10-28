@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu de Navigation Complexe</title>
+  <meta charset="UTF-8">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+      body {
+          background:
+                  linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+                  linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+      }
+
+      #logo {
+          font-size: 2em;
+          font-family: "Roboto", serif;
+          font-weight:bold;
+          background: none;
+      }
+
+      #logo {
+          text-decoration: none;
+      }
+
+      .main-menu {
+          display: flex;
+          background: black;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .main-menu li {
+          list-style: none;
+          margin: 3em;
+      }
+
+      li a {
+          color: white;
+          font-family: "Roboto", serif;
+          font-weight: lighter;
+          text-decoration: none;
+          font-size: 1.2em;
+
+
+          background:
+                  linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+                  linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+          background-size: 100% 0.1em, 0 0.1em;
+          background-position: 100% 100%, 0 100%;
+          background-repeat: no-repeat;
+          transition: background-size 400ms;
+      }
+      li a:hover, a:focus {
+          color: paleturquoise;
+          background-size: 0 0.1em, 100% 0.1em;
+      }
+
+      .sub-menu  {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          margin-left: -5em;
+
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .main-menu li:hover .sub-menu {
+          display: block;
+      }
+  </style>
+</head>
+<body>
+<nav>
+  <ul class="main-menu">
+    <li><a id="logo" href="/">🍱 Bento Corp.</a></li>
+    <li><a href="/">Accueil</a></li>
+    <li>
+      <a href="/services">Services ▾</a>
+      <ul class="sub-menu">
+        <li><a href="/web-design">Web Design</a></li>
+        <li><a href="/development">Développement</a></li>
+        <li><a href="/consulting">Consulting</a></li>
+      </ul>
+    </li>
+    <li><a href="/portfolio">Portfolio</a></li>
+    <li>
+      <a href="/contact">Contact ▾</a>
+      <ul class="sub-menu">
+        <li><a href="/support">Support</a></li>
+        <li><a href="/sales">Ventes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>

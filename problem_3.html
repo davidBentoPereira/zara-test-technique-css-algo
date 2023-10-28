@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>Articles</title>
+  <style>
+      article h2 {
+          color: fuchsia;
+          font-weight: bolder;
+      }
+
+      article:nth-child(3) p {
+          color: blueviolet;
+          font-weight: bolder;
+          font-size: 3em;
+      }
+  </style>
+</head>
+<body>
+<!-- Lien vers ma solution : https://css-tricks.com/almanac/selectors/f/first-of-type/ -->
+<h2>Ce titre ne doit pas être ciblé</h2>
+<article>
+  <h1>Titre de l'article 1</h1>
+  <p>Contenu de l'article 1</p>
+</article>
+<article>
+  <h2>Titre de l'article 2</h2>
+  <p>Contenu de l'article 2</p>
+</article>
+<article>
+  <h2>Titre de l'article 3</h2>
+  <p>Contenu de l'article 3</p>
+</article>
+</body>
+</html>
