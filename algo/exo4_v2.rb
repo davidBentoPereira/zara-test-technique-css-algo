@@ -7,11 +7,6 @@
 # Pro-tip: [3, 34, 302, 50, 31] est un meilleur test que celui ci-dessus.
 # => 50 34 31 302 3
 
-# Bien tenté ! Mais il faut faire l'exercice sans conversion en String.
-# def big(arr)
-#   arr.map(&:to_s).sort.reverse
-# end
-
 def big(arr)
   arr.count.times { arr = sort(arr) }
   arr
@@ -36,7 +31,7 @@ def sort(arr)
     continue = true
 
     while continue
-      # If current or previous numlber has no digit anymore, set it's value to 0
+      # If current or previous number has no digit anymore, set it's value to 0
       # This will allow to make the comparison in favor of the existing digit
       digits_prev_number[i] = 0 if digits_prev_number[i].nil?
       digits_curr_number[i] = 0 if digits_curr_number[i].nil?
@@ -55,13 +50,6 @@ def sort(arr)
   end
 
   result
-end
-
-# Compare two numbers and return the greatest value
-def greatest(num1, num2)
-  num1 if num1 > num2
-  num2 if num2 > num1
-  "equal" if num2 == num1
 end
 
 def test1
